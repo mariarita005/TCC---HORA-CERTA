@@ -1,10 +1,9 @@
-teste
 CREATE TABLE usuarios
 	(
   		usuid int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
   		usunome varchar(100),
   		usulogin varchar(50),
   		usupass varchar(50),
-  		usuativo (1) DEFAULT 1,
- 	 	usulogado (1) DEFAULT 0
-  	);  
+  		usuativo boolean DEFAULT 1,
+ 	 	usulogado boolean DEFAULT 0
+  	)
